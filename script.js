@@ -29,7 +29,7 @@ function showRegisteredUser() {
 }
 
 function rollDice() {
-    if (rollCount <= 3) {
+    if (rollCount < 3) {
         const result = Math.floor(Math.random() * 6) + 1;
         diceRolls.push(result);
         rollCount++;
@@ -55,6 +55,6 @@ function generateCoupon() {
         const coupon = Math.floor(Math.random() * 900000000000) + 100000000000;
         alert(`Congratulations🥳, you've won a coupon! \n Coupon Code: ${coupon}`);
     } else {
-        alert("You need fill the form to generate a coupon.");
+        alert("You need to get score greater than 10. \n then generate a coupon.");
     }
 }
