@@ -10,9 +10,11 @@ function showForm() {
 function registerUser() {
     const username = document.getElementById("username").value;
     const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
-    if (username && email) {
-        registeredUser = { username, email };
+
+    if (username && email && password) {
+        registeredUser = { username, email, password };
         document.getElementById("form-container").style.display = "none";
         alert("Registration successful🥳!");
     } else {
@@ -38,10 +40,7 @@ function rollDice() {
             const sum = diceRolls.reduce((acc, current) => acc + current, 0);
             if (sum > 10) {
                 alert("You can now click on the 4th image.");
-            } else {
-                document.getElementById("message-text").textContent = "Try again after scoring more than 10.";
-                document.getElementById("message").style.display = "block";
-            }
+            } 
         } else {
             alert(`You rolled a ${result}`);
         }
@@ -55,6 +54,6 @@ function generateCoupon() {
         const coupon = Math.floor(Math.random() * 900000000000) + 100000000000;
         alert(`Congratulations🥳, you've won a coupon! \n Coupon Code: ${coupon}`);
     } else {
-        alert("You need to get score greater than 10. \n then generate a coupon.");
+        alert("You need to fill form to generate a coupon.");
     }
 }
