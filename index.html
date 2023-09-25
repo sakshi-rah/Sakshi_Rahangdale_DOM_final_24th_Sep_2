@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Flowers_Gallery🌺</title>
+    </head>
+    <body>
+        <!--Heading-->
+        <section>
+            <div class="header">
+                <h1>Welcome to the Flowers Gallery...</h1>
+
+                <div class="steps-container">
+                    <li>Click on the 1st image and register yourself enter your
+                        username, email & password.</li>
+                    <li>Now, click on the 2nd image to get your details.</li>
+                    <li>Click three times on the 3rd image if your score is
+                        greater than 10 then click on the next image.</li>
+                    <li>Finally, click on the 4th image and get a coupon.</li>
+                </div>
+
+            </div>
+
+            <div class="gallery">
+                <div id="image1" onclick="showForm()">
+                    <img
+                        src="https://images.pexels.com/photos/53141/rose-red-blossom-bloom-53141.jpeg?cs=srgb&dl=pexels-pixabay-53141.jpg&fm=jpg"
+                        alt class="flower image"/>
+                </div>
+                <div id="image2" onclick="showRegisteredUser()"><img
+                        src="https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_640.jpg"
+                        alt class="flower image"/></div>
+                <div id="image3" onclick="rollDice()"><img
+                        src="https://img.freepik.com/free-photo/beautiful-flowers-with-water-drops_23-2150705665.jpg"
+                        alt class="flower image"/></div>
+                <div id="image4" onclick="generateCoupon()"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/2/24/Red_flower_with_green_leaves_in_the_grass.jpg"
+                        alt class="flower image"/></div>
+            </div>
+
+        </section>
+        <!--Registration form-->
+        <div id="form-container">
+            <div id="registration-form">
+                <h2>Register Yourself</h2>
+                <form id="user-form">
+                    <label for="username">Username</label><br>
+                    <input type="text" id="username" placeholder="Username"><br><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" placeholder="Email"><br><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" placeholder="Paassword"><br><br>
+                    <button type="button" onclick="registerUser()">Register</button>
+                </form>
+            </div>
+            
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.header h1 {
+    margin: 30px;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(206, 74, 101);
+}
+.steps-container{
+    width: 900px;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media(max-width:530px){
+    .header h1{
+        font-size: 1.3rem;
+        margin-top: 30px;
+    }
+    
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px auto;
+}
+
+.image {
+    margin: 20px;
+    width: 250px;
+    border-radius: 10px;
+    height: 250px;
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 1px 1px 7px 3px rgb(131, 131, 131);
+}
+
+.image:hover {
+    transition: all 0.4s 0.1s linear;
+    transform: scale(1.1);
+}
+#form-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#registration-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#message {
+    display: none;
+}
