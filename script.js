@@ -14,7 +14,7 @@ function registerUser() {
     if (username && email) {
         registeredUser = { username, email };
         document.getElementById("form-container").style.display = "none";
-        alert("Registration successful!");
+        alert("Registration successful🥳!");
     } else {
         alert("Please fill in all fields.");
     }
@@ -49,7 +49,6 @@ function rollDice() {
         alert("You can only roll the dice 3 times.");
     }
 }
-
 
 function generateCoupon() {
     if (registeredUser && rollCount === 3) {

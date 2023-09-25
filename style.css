@@ -12,7 +12,8 @@
     font-size: 3rem;
     color: rgb(206, 74, 101);
 }
-.steps-container{
+
+.steps-container {
     width: 900px;
     margin: auto;
     padding: 10px;
@@ -20,12 +21,12 @@
     line-height: 30px;
 }
 
-@media(max-width:530px){
-    .header h1{
+@media(max-width:530px) {
+    .header h1 {
         font-size: 1.3rem;
         margin-top: 30px;
     }
-    
+
 }
 
 .gallery {
@@ -49,6 +50,7 @@
     transition: all 0.4s 0.1s linear;
     transform: scale(1.1);
 }
+
 #form-container {
     display: none;
     align-items: center;
@@ -63,11 +65,38 @@
 }
 
 #registration-form {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
-    border-radius: 10px;
+    line-height: 25px;
+    text-align: center;
 }
 
-#message {
-    display: none;
+#registration-form h1 {
+    color: rgb(206, 74, 101);
+    padding: 15px;
+    margin-bottom: 10px;
+
+}
+
+#user-form input {
+    width: 280px;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 4px gray;
+}
+
+#user-form button{
+    padding: 8px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(206, 74, 101);
+    border-radius: 3px;
+}
+#user-form button:hover{
+    background-color: rgba(248, 48, 88, 0.683);
+
 }
