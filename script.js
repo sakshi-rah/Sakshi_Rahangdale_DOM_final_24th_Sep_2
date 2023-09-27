@@ -16,7 +16,7 @@ function registerUser() {
     if (username && email && password) {
         registeredUser = { username, email, password };
         document.getElementById("form-container").style.display = "none";
-        alert("Registration successful🥳!");
+        alert(`${username} your registration successful🥳!`);
     } else {
         alert("Please fill in all fields.");
     }
@@ -40,7 +40,7 @@ function rollDice() {
             const sum = diceRolls.reduce((acc, current) => acc + current, 0);
             if (sum > 10) {
                 alert("You can now click on the 4th image.");
-            } 
+            }
         } else {
             alert(`You rolled a ${result}`);
         }
@@ -52,7 +52,7 @@ function rollDice() {
 function generateCoupon() {
     if (registeredUser && rollCount === 3) {
         const coupon = Math.floor(Math.random() * 900000000000) + 100000000000;
-        alert(`Congratulations🥳, you've won a coupon! \n Coupon Code: ${coupon}`);
+        alert(`🎉Congratulations🥳, you've won a coupon! \n Coupon Code: ${coupon}`);
     } else {
         alert("You need to fill form to generate a coupon.");
     }
